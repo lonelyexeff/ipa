@@ -1,0 +1,18 @@
+{
+  "name": "NoAimeXe",
+  "short_name": "NoAimeXe",
+  "description": "Painel de Funções desenvolvido por Lonely Exe.",
+  "icons": [
+    {
+      "src": "icon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#ff00ff",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR"
+}

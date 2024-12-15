@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff00ff"> <!-- Цвет темной темы приложения -->
+    <link rel="manifest" href="manifest.webmanifest"> <!-- Ссылка на манифест -->
+    <title>NoAimeXe</title>
+    
+    <!-- Опциональные мета-теги для SEO и прочего -->
+    <meta name="description" content="Painel de Funções desenvolvido por Lonely Exe.">
+    <meta name="keywords" content="NoAimeXe, PWA, funções, painel, Lonely Exe">
+    <meta name="author" content="Lonely Exe">
+    
+    <!-- Apple-specific meta tags -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon-180x180.png"> <!-- Иконка для iOS -->
+    <meta name="apple-mobile-web-app-title" content="NoAimeXe">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- For iOS and other platforms -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon-180x180.png">
+    <link rel="shortcut icon" href="icon-180x180.png">
+</head>
+<body>
+
+    <!-- Main content here -->
+    
+    <div class="login-panel">
+        <h2>NoAimeXe🈹</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">RUN</button>
+    </div>
+
+    <div class="panel" style="display: none;">
+        <!-- Cabeçalho -->
+        <div class="header">NoAimeXe🈴</div>
+        <div class="subheader">YouTube ~ Lonely Exe</div>
+
+        <!-- Botão de Funções -->
+        <div class="button-bar">Functions</div>
+
+        <!-- Barra de Switches -->
+        <div class="switch-bar">
+            <label><input type="checkbox"> Trick V1</label>
+            <label><input type="checkbox"> Trick V2</label>
+            <label><input type="checkbox"> Trick V3</label>
+        </div>
+
+        <!-- Opções -->
+        <div class="option">
+            <div>
+                <strong>AIMBOT</strong>
+                <p>Creator @LONELY EXE 👿</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="option">
+            <div>
+                <strong>NO RECOIL</strong>
+                <p>Creator @LONELY EXE 👿</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="option">
+            <div>
+                <strong>HEADTRICK 80%</strong>
+                <p>Creator @LONELY EXE 👿</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="option">
+            <div>
+                <strong>AIMTRICK</strong>
+                <p>Creator @LONELY EXE 👿</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="option">
+            <div>
+                <strong>BYPASS/ANTIBAN</strong>
+                <p>Creator @LONELY EXE 👿</p>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">WORK</div>
+        <div class="copyright">copyright © LONELY EXE</div>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            // Verifica login simples (exemplo)
+            if (username === "LONELY" && password === "EXE") {
+                document.querySelector(".login-panel").style.display = "none";
+                document.querySelector(".panel").style.display = "block";
+            } else {
+                alert("Username or Password incorrect");
+            }
+        }
+    </script>
+
+</body>
+</html>
